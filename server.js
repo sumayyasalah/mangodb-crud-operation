@@ -13,9 +13,9 @@ app.use(express.json());
 
 const studentSchema = new mongoose.Schema({
   name: String,
-  course: String,
   age: Number,
-  grade: String
+  course: String,
+  city: String
 }, { timestamps: true });
 
 const Student = mongoose.model('Student', studentSchema, collectionName);
